@@ -1,0 +1,5187 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "fontStyle": "Book",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "data": {"name": "data-8f51114b55deb67498f28502117b2a30"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "legend": {
+            "orient": "bottom",
+            "columns": 2,
+            "labelLimit": 0,
+            "titleLimit": 0
+          },
+          "scale": {"scheme": "magma"},
+          "title": "Type of Temporary Accommodation",
+          "type": "nominal"
+        },
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {
+          "field": "Households",
+          "title": "Households in Temporary Accommodation",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-dab6218aae6d204a5073ae49cbef701a"},
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": -5,
+        "yOffset": -30
+      },
+      "encoding": {"url": {"field": "img", "type": "nominal"}}
+    }
+  ],
+  "height": 280,
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-8f51114b55deb67498f28502117b2a30": [
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4820
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5380
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5890
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7240
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6570
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7700
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 8240
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 8000
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 8680
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 8910
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 9420
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 9870
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10860
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11390
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 12220
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11860
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 12710
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 12720
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 13950
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 13240
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 12440
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11380
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10310
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 8420
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7090
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7240
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7450
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6450
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6780
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6290
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6100
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4950
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5150
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4890
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4900
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4210
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4310
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4070
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4090
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3530
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3840
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3440
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3230
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2560
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2450
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2150
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2050
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 1880
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2050
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2410
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2660
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2310
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 2750
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3120
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3370
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3170
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3960
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4230
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4120
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3820
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4510
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4350
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4610
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 3920
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4370
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4590
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4680
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 4540
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5270
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5630
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5910
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5120
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5960
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6490
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6680
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5990
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6580
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6520
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6470
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 5780
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6130
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6890
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6900
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6660
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 6970
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7110
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7080
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 7330
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 8130
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11360
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10380
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10490
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11130
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10210
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 9380
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 9270
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10030
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 10240
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11450
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Bed and breakfast hotels",
+        "Households": 11990
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Bed and breakfast hotels",
+        "Households": 13650
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Bed and breakfast hotels",
+        "Households": 14080
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Bed and breakfast hotels",
+        "Households": 14880
+      },
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": null
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3590
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3690
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4130
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4060
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4110
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5020
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4690
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3250
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3260
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4140
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4270
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4180
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4190
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4520
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4520
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4450
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4500
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4570
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4870
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4900
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5140
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5410
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5650
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5780
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 6210
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5980
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5680
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5230
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4980
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4570
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4180
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3620
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3380
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3340
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3520
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3590
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 3920
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4200
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4350
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4460
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 4860
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5370
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 5880
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 6190
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 7000
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 7630
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 8400
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 8660
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 9340
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 10100
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 11750
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 12540
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 13620
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 14870
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 15760
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 16210
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 17060
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 17530
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 18420
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 19080
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 19570
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 20280
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 20650
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 20800
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 21000
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 21050
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 21730
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 22000
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 22330
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 22210
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 21890
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 23260
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24150
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 26060
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24930
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24590
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24200
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 23750
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 23670
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24130
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 23380
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24030
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 25370
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 25990
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 25660
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 24740
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, nightly paid",
+        "Households": 27530
+      },
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 9730
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 9490
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 9820
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 9760
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 9840
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 10210
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 9960
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 9650
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 10300
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 10320
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 10460
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 10800
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 10610
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 10320
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 11270
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 10680
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 9570
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 9770
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 9720
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 9650
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 10050
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 10420
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 10800
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 10370
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 10790
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 10570
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 10380
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 10070
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 10280
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 9870
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 10020
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 9230
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 9010
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 8940
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 8460
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 7850
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 7640
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 7230
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 7180
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 6620
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 6450
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 6020
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5800
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5250
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5170
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 4710
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 4480
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 4150
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 4240
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 4320
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 4360
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 4160
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 4250
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 4370
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 4380
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 4310
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 4360
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 4350
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 4390
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 4280
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 4480
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 4590
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 4700
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 4710
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 4880
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 4980
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5010
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5090
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5040
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5180
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5310
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5360
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5570
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5490
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5690
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5700
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5740
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5710
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5570
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5440
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5690
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5680
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5640
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5670
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5730
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 6340
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 6480
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 6680
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 6920
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5820
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5610
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5660
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5720
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5850
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 6260
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5550
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5930
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5540
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5640
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Hostels (including refuges)",
+        "Households": 5660
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Hostels (including refuges)",
+        "Households": 5890
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Hostels (including refuges)",
+        "Households": 5810
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Hostels (including refuges)",
+        "Households": 5980
+      },
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 12090
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 12960
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 15590
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 14750
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 16210
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 15030
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 15300
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 16280
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 17070
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 19720
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 18580
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 21620
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 21900
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 21970
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 20050
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 20600
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 20660
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 22610
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23850
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25940
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 28370
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 31460
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 35140
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 38730
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 42390
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 42630
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 43720
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 46140
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 46530
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 46990
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 48860
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 49910
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 49660
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 49320
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 49700
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 48850
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 45600
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 44610
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 43430
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 41730
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 40480
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 41130
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 39990
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 38790
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 37450
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 35920
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 34130
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 32430
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 30920
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 29820
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 28740
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 27730
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26960
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26240
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26380
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26080
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26040
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25960
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26290
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26310
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26260
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24780
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25660
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25460
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25270
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24800
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23290
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23460
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23990
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23820
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23520
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25580
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24420
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24990
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24300
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24150
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24510
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23050
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23390
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23430
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25320
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25370
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24970
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25080
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25260
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 27890
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 27450
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 27500
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 27910
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 28450
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25850
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 28210
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 28020
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 27730
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 25920
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24750
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24530
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23280
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23170
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 23150
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 24200
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26390
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Private accommodation, leased by LA",
+        "Households": 26200
+      },
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 13940
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 14800
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 16360
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 17560
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 18600
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 18740
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 20330
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 20330
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 21370
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 22490
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 23700
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 24320
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25480
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25450
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25930
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 26580
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27760
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 28470
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 28870
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27580
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 28250
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27590
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27560
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27480
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27890
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27960
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 28220
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27730
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 26630
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 27430
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25030
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 24220
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 22350
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 20790
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 20180
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 18840
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 18040
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 17240
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 16490
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 15910
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 14740
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 14030
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 13420
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 11930
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 10480
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 9520
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 8780
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 8180
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7790
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7650
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7610
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7430
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7490
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7570
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7890
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 7990
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 8270
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 8600
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 8930
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 9090
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 9270
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 10060
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 9810
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 9560
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 9880
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 10120
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 10070
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 10530
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 10920
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 11500
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 12210
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 12480
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 13130
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 13540
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 13610
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 14040
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 14370
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 15010
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 15560
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 15750
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 15650
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 15920
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 16530
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 16590
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 17800
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 18400
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 19250
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 19820
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 20530
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 21850
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 21500
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 21590
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 21690
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 22290
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 23830
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 23680
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 24100
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 24620
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25160
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25600
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Local authority or Housing association stock",
+        "Households": 26400
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Local authority or Housing association stock",
+        "Households": 25890
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Local authority or Housing association stock",
+        "Households": 26680
+      },
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6930
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6760
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4850
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4480
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5360
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6760
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7620
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7910
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7750
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6080
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 9710
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6490
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6350
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6790
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8320
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7800
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5920
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4400
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4490
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4680
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5810
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5990
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5950
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6370
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6270
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6990
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7260
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6460
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6670
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5870
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6500
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5970
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5700
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5400
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4980
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4870
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6400
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6350
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5920
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5930
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5790
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4090
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4020
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3720
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3480
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3360
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3310
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3100
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2940
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2860
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2800
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2790
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2870
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2850
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2740
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2910
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 2940
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3130
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3360
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3440
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3800
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4440
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4230
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4620
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4680
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4990
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6110
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5780
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5860
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5980
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5860
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4400
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5530
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5020
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6060
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6790
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6460
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7960
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8170
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8520
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6940
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7460
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7660
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7540
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6950
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4290
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 5250
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 3710
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4550
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4730
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6340
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4550
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 4550
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6040
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 6490
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8900
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7030
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7970
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8050
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8120
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8750
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 8930
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Other accommodation (including private landlord)",
+        "Households": 7730
+      },
+      {
+        "Date": "1998-01-01",
+        "Year": "1998",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5330
+      },
+      {
+        "Date": "1998-04-01",
+        "Year": "1998",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5390
+      },
+      {
+        "Date": "1998-07-01",
+        "Year": "1998",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5740
+      },
+      {
+        "Date": "1998-10-01",
+        "Year": "1998",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5790
+      },
+      {
+        "Date": "1999-01-01",
+        "Year": "1999",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6110
+      },
+      {
+        "Date": "1999-04-01",
+        "Year": "1999",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6500
+      },
+      {
+        "Date": "1999-07-01",
+        "Year": "1999",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6780
+      },
+      {
+        "Date": "1999-10-01",
+        "Year": "1999",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6440
+      },
+      {
+        "Date": "2000-01-01",
+        "Year": "2000",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6580
+      },
+      {
+        "Date": "2000-04-01",
+        "Year": "2000",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6600
+      },
+      {
+        "Date": "2000-07-01",
+        "Year": "2000",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7160
+      },
+      {
+        "Date": "2000-10-01",
+        "Year": "2000",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7610
+      },
+      {
+        "Date": "2001-01-01",
+        "Year": "2001",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8420
+      },
+      {
+        "Date": "2001-04-01",
+        "Year": "2001",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8870
+      },
+      {
+        "Date": "2001-07-01",
+        "Year": "2001",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8090
+      },
+      {
+        "Date": "2001-10-01",
+        "Year": "2001",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8600
+      },
+      {
+        "Date": "2002-01-01",
+        "Year": "2002",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8620
+      },
+      {
+        "Date": "2002-04-01",
+        "Year": "2002",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8890
+      },
+      {
+        "Date": "2002-07-01",
+        "Year": "2002",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 10390
+      },
+      {
+        "Date": "2002-10-01",
+        "Year": "2002",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 9760
+      },
+      {
+        "Date": "2003-01-01",
+        "Year": "2003",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 10580
+      },
+      {
+        "Date": "2003-04-01",
+        "Year": "2003",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 13310
+      },
+      {
+        "Date": "2003-07-01",
+        "Year": "2003",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 15370
+      },
+      {
+        "Date": "2003-10-01",
+        "Year": "2003",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 17500
+      },
+      {
+        "Date": "2004-01-01",
+        "Year": "2004",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 15870
+      },
+      {
+        "Date": "2004-04-01",
+        "Year": "2004",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 17030
+      },
+      {
+        "Date": "2004-07-01",
+        "Year": "2004",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 17100
+      },
+      {
+        "Date": "2004-10-01",
+        "Year": "2004",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 16100
+      },
+      {
+        "Date": "2005-01-01",
+        "Year": "2005",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 15290
+      },
+      {
+        "Date": "2005-04-01",
+        "Year": "2005",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 16020
+      },
+      {
+        "Date": "2005-07-01",
+        "Year": "2005",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 15140
+      },
+      {
+        "Date": "2005-10-01",
+        "Year": "2005",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 11570
+      },
+      {
+        "Date": "2006-01-01",
+        "Year": "2006",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 11010
+      },
+      {
+        "Date": "2006-04-01",
+        "Year": "2006",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 10210
+      },
+      {
+        "Date": "2006-07-01",
+        "Year": "2006",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 9720
+      },
+      {
+        "Date": "2006-10-01",
+        "Year": "2006",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8470
+      },
+      {
+        "Date": "2007-01-01",
+        "Year": "2007",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8780
+      },
+      {
+        "Date": "2007-04-01",
+        "Year": "2007",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 9150
+      },
+      {
+        "Date": "2007-07-01",
+        "Year": "2007",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 9540
+      },
+      {
+        "Date": "2007-10-01",
+        "Year": "2007",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8080
+      },
+      {
+        "Date": "2008-01-01",
+        "Year": "2008",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7470
+      },
+      {
+        "Date": "2008-04-01",
+        "Year": "2008",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7890
+      },
+      {
+        "Date": "2008-07-01",
+        "Year": "2008",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6740
+      },
+      {
+        "Date": "2008-10-01",
+        "Year": "2008",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6070
+      },
+      {
+        "Date": "2009-01-01",
+        "Year": "2009",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5560
+      },
+      {
+        "Date": "2009-04-01",
+        "Year": "2009",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4560
+      },
+      {
+        "Date": "2009-07-01",
+        "Year": "2009",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4350
+      },
+      {
+        "Date": "2009-10-01",
+        "Year": "2009",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4150
+      },
+      {
+        "Date": "2010-01-01",
+        "Year": "2010",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 3710
+      },
+      {
+        "Date": "2010-04-01",
+        "Year": "2010",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 3780
+      },
+      {
+        "Date": "2010-07-01",
+        "Year": "2010",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4100
+      },
+      {
+        "Date": "2010-10-01",
+        "Year": "2010",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4410
+      },
+      {
+        "Date": "2011-01-01",
+        "Year": "2011",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4770
+      },
+      {
+        "Date": "2011-04-01",
+        "Year": "2011",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4770
+      },
+      {
+        "Date": "2011-07-01",
+        "Year": "2011",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5110
+      },
+      {
+        "Date": "2011-10-01",
+        "Year": "2011",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5490
+      },
+      {
+        "Date": "2012-01-01",
+        "Year": "2012",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5400
+      },
+      {
+        "Date": "2012-04-01",
+        "Year": "2012",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5500
+      },
+      {
+        "Date": "2012-07-01",
+        "Year": "2012",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5560
+      },
+      {
+        "Date": "2012-10-01",
+        "Year": "2012",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5690
+      },
+      {
+        "Date": "2013-01-01",
+        "Year": "2013",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5930
+      },
+      {
+        "Date": "2013-04-01",
+        "Year": "2013",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5510
+      },
+      {
+        "Date": "2013-07-01",
+        "Year": "2013",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5010
+      },
+      {
+        "Date": "2013-10-01",
+        "Year": "2013",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4930
+      },
+      {
+        "Date": "2014-01-01",
+        "Year": "2014",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5620
+      },
+      {
+        "Date": "2014-04-01",
+        "Year": "2014",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5310
+      },
+      {
+        "Date": "2014-07-01",
+        "Year": "2014",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6120
+      },
+      {
+        "Date": "2014-10-01",
+        "Year": "2014",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5820
+      },
+      {
+        "Date": "2015-01-01",
+        "Year": "2015",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6900
+      },
+      {
+        "Date": "2015-04-01",
+        "Year": "2015",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6370
+      },
+      {
+        "Date": "2015-07-01",
+        "Year": "2015",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6610
+      },
+      {
+        "Date": "2015-10-01",
+        "Year": "2015",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7490
+      },
+      {
+        "Date": "2016-01-01",
+        "Year": "2016",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6790
+      },
+      {
+        "Date": "2016-04-01",
+        "Year": "2016",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7020
+      },
+      {
+        "Date": "2016-07-01",
+        "Year": "2016",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7590
+      },
+      {
+        "Date": "2016-10-01",
+        "Year": "2016",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8610
+      },
+      {
+        "Date": "2017-01-01",
+        "Year": "2017",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8230
+      },
+      {
+        "Date": "2017-04-01",
+        "Year": "2017",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 8870
+      },
+      {
+        "Date": "2017-07-01",
+        "Year": "2017",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 9540
+      },
+      {
+        "Date": "2017-10-01",
+        "Year": "2017",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 10020
+      },
+      {
+        "Date": "2018-01-01",
+        "Year": "2018",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 9560
+      },
+      {
+        "Date": "2018-04-01",
+        "Year": "2018",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 7660
+      },
+      {
+        "Date": "2018-07-01",
+        "Year": "2018",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6460
+      },
+      {
+        "Date": "2018-10-01",
+        "Year": "2018",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5930
+      },
+      {
+        "Date": "2019-01-01",
+        "Year": "2019",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6530
+      },
+      {
+        "Date": "2019-04-01",
+        "Year": "2019",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6330
+      },
+      {
+        "Date": "2019-07-01",
+        "Year": "2019",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6730
+      },
+      {
+        "Date": "2019-10-01",
+        "Year": "2019",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 6350
+      },
+      {
+        "Date": "2020-01-01",
+        "Year": "2020",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5930
+      },
+      {
+        "Date": "2020-04-01",
+        "Year": "2020",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5820
+      },
+      {
+        "Date": "2020-07-01",
+        "Year": "2020",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 5630
+      },
+      {
+        "Date": "2020-10-01",
+        "Year": "2020",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4870
+      },
+      {
+        "Date": "2021-01-01",
+        "Year": "2021",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 4800
+      },
+      {
+        "Date": "2021-04-01",
+        "Year": "2021",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1480
+      },
+      {
+        "Date": "2021-07-01",
+        "Year": "2021",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1240
+      },
+      {
+        "Date": "2021-10-01",
+        "Year": "2021",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1510
+      },
+      {
+        "Date": "2022-01-01",
+        "Year": "2022",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1670
+      },
+      {
+        "Date": "2022-04-01",
+        "Year": "2022",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1740
+      },
+      {
+        "Date": "2022-07-01",
+        "Year": "2022",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1800
+      },
+      {
+        "Date": "2022-10-01",
+        "Year": "2022",
+        "Quarter": "Q4",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 1970
+      },
+      {
+        "Date": "2023-01-01",
+        "Year": "2023",
+        "Quarter": "Q1",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 2080
+      },
+      {
+        "Date": "2023-04-01",
+        "Year": "2023",
+        "Quarter": "Q2",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 2040
+      },
+      {
+        "Date": "2023-07-01",
+        "Year": "2023",
+        "Quarter": "Q3",
+        "Type": "Duty owed, no accommodation secured",
+        "Households": 2310
+      }
+    ],
+    "data-dab6218aae6d204a5073ae49cbef701a": [
+      {
+        "x": 2.5,
+        "y": 0,
+        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+      }
+    ]
+  },
+  "autosize": {"type": "pad", "contains": "padding", "resize": true}
+}
