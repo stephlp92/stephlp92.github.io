@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "House Prices",
+    "subtitle": "House Prices, 2015=100 | Source: Istat through ECO-API",
+    "fontSize": "14",
+    "subtitleFontSize": "12",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": "250",
+  "width": "container",
+  "background": "#ffffff",
+  "view": {"fill": "#ffffff"},
+  "data": {
+    "url": "https://api.economicsobservatory.com/ita/house?vega",
+    "format": {"type": "json"}
+  },
+  "mark": {"type": "line", "color": "#2fb63f", "strokeWidth": "2"},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {"title": "", "titleColor": "#122B39"}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {"title": "", "titleColor": "#122B39"}
+    }
+  },
+  "autosize": {"type": "pad", "contains": "padding", "resize": true}
+}
