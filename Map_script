@@ -1,48 +1,34 @@
-{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-"title": {
-  "text": "Gun deaths and income - US states",
-  "subtitle":["Median income (x), and firearm deaths per 100k population (y)",""],
-  "subtitleFontStyle":"italic",
-  "subtitleFontSize":10,
-  "anchor": "start",
-  "color": "black"
-},
-
-  "description": "Various US measures state by state",
-
-"data": {
-  "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/usa_socioEconomic.csv",
-    "format":{"type":"csv"}},
-
-  "mark": {
-    "type":"circle",
-    "size":150,
-    "color":"rgb(0,67,167)",
-    "opacity":0.6
-  },
-  
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
   "height": 300,
-  "width": 400,
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/vega/datalib/master/test/data/world-110m.json",
+    "format": {"type": "topojson", "feature": "countries"}
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/owid_co2_2022.csv"
+        },
+        "key": "id",
+        "fields": ["value"]
+      }
+    }
+  ],
+  "projection": {"type": "equalEarth"},
+  "mark": {"type": "geoshape", "stroke": "gray"},
   "encoding": {
-    "x": {
-      "field": "medIncome",
+    "color": {
+      "field": "value",
       "type": "quantitative",
-      "scale": {"domain": [40000, 80000]},
-      "axis": {
-        "title": "Median Income"
-      }
-    },
-    "y": {
-      "field": "FirearmDeaths", 
-      "type": "quantitative",
-      "axis": {
-        "title": "Firearm Deaths"
-      }
-    },
-   "tooltip": [
-      {"field": "State"}
-   ]
+      "title": "CO2 Emissions (tons)"
+    }
+  },
+  "title": {
+    "text": "Annual CO2 Emissions",
+    "subtitle": ["2022, includes land-use change", "Source: OWID"]
   }
 }
