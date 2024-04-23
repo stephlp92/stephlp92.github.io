@@ -11,11 +11,11 @@
 
   "data": {"url": "https://api.economicsobservatory.com/bra/infl?vega"},
 
-  "mark": "line",
+  "mark": {"type":"line", "color":"red"},
 
   "encoding": {
     "x": {"field": "date", "type": "temporal"},
-    "y": {"field": "value", "type": "quantitative", "title":null}
+    "y": {"field": "value", "type": "quantitative" 
+    }
   }
 }
-
